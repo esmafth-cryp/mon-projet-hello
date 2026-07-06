@@ -1,0 +1,6 @@
+services:
+  web:
+    build: ./backend
+    container_name: hello-world-app
+    ports:
+      - "5000:5000"
