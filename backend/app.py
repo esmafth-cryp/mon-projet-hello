@@ -1,9 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Permet à React de communiquer avec Flask
 
 @app.route('/')
-def hello():
+def home():
     return "Hello World!"
 
 if __name__ == '__main__':
